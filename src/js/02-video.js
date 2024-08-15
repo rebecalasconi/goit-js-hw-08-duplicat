@@ -18,9 +18,9 @@ player.on('timeupdate', function(data) {
 
 
 let storageTime = localStorage.getItem('videoplayer-current-time');
-let javasTime = JSON.parse(storageTime);
+let jsTime = JSON.parse(storageTime);
 
-player.setCurrentTime(javasTime).then(function(seconds) {
+player.setCurrentTime(jsTime).then(function(seconds) {
 }).catch(function(error) {
     switch (error.name) {
         case 'RangeError':
